@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>KRISHI SAHAYAK</title>
+
+     <!--font code link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+     <!--custom css link-->
+     <link rel="stylesheet" href="style.css">
+     <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .bgimage {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('image1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation: bgChange 20s linear infinite;
+        }
+
+        @keyframes bgChange {
+            0% {
+                background-image: url('image1.jpg');
+            }
+
+            20% {
+                background-image: url('image2.jpg');
+            }
+
+            40% {
+                background-image: url('image3.jpg');
+            }
+
+            60% {
+                background-image: url('image4.jpg');
+            }
+
+            80% {
+                background-image: url('image5.jpg');
+            }
+
+            100% {
+                background-image: url('image1.jpg');
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+        }
+
+        .content h1 {
+            font-size: 60px;
+            margin-bottom: 0px;
+
+        }
+
+        .content h1 span {
+            color: rgb(15, 163, 15)
+        }
+
+        .content p {
+            font-size: 18px;
+            width: 60%;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .content button {
+            color: aliceblue;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            background-color: rgb(39, 169, 39);
+            padding: 10px 22px;
+            text-transform: uppercase;
+            border-radius: 25px;
+            transition: .5s;
+        }
+
+        .content button:hover {
+            background-color: rgb(34, 112, 34);
+        }
+    </style>
+</head>
+<body>
+
+    <!--header section starts-->
+    <header class="header">
+        <a href="#" class="logo">
+            <!-- <img src="C:\Users\SIDDHI\Downloads\sem 6\soil detection\logo.jpg" alt=""> -->
+            <img src="\logo.jpg" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACTS</a>
+            <a href="#blogs">SECTIONS</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here....">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+    <!--header section ends-->
+
+    <!--home section starts-->
+    <!-- <section class="home" id="home">
+        <div>
+            <h3>KRISHI SAHAYAK</h3>
+        </div>
+    </section> -->
+    <section class="home" id="home">
+        <div class="bgimage"></div>
+        <div class="overlay">
+            <div class="content">
+                <h1>KRISHI SAHAYAK</h1>
+                <p>Unlocking nature's code for perfect harvests, our site combines soil insight with crop forecasts</p>
+                <!-- Remove the button and add the navigation links from the header section here -->
+            </div>
+        </div>
+    </section>
+
+<!--home section ends-->
+<!--about section starts-->
+<!-- <section class="about" id="about">
+    <h1 class="heading"><span>about</span> us</h1>
+    <div class="row">
+        <img src="images/about-img.jpeg" alt="">
+    </div>
+    <div class="content">
+        <h2>Welcome to Krishi Shayak</h2>
+        <p>Discover your soil's secrets and unlock its full potential with our precise analysis and tailored recommendations</p>
+        <p>Maximize your land's productivity while promoting sustainable agriculture practices.</p>
+        <a href="#" class="btn">learn more</a>
+    </div>
+about section ends -->
+<section class="about" id="about">
+    <div class="heading">
+        <h1><span>About</span> Us</h1>
+    </div>
+    <div class="about-content">
+        <div class="about-image">
+            <img src="about us.jpg" alt="About Us Image">
+        </div>
+        <div class="about-text">
+            <h2>Welcome to Krishi Sahayak</h2>
+            <p>Unlock the full potential of your land with Krishi Sahayak. We provide comprehensive soil analysis and tailored recommendations to maximize productivity while promoting sustainable agricultural practices.</p>
+            <p>Our team of experts is dedicated to helping you understand your soil's secrets and achieve perfect harvests. With Krishi Sahayak, you can confidently navigate the complexities of agriculture and optimize your farming techniques.</p>
+            <a href="#" class="btn">Home</a>
+        </div>
+    </div>
+</section>
+
+
+<!--contact section stars-->
+</section class="contact" id="contact">
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> us</h1>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30156.556515350487!2d73.001307!3d19.12653005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0ae08fd4fcb%3A0xeb29360c730e957f!2sGhansoli%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1712164677739!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="row">
+            <form action="">
+                <h3>Get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="phone">
+                </div>
+                <input type="submit" value="contact now" class="btn">
+            </form>
+        </div>
+    </section>
+</section>  
+<!--contact section ends-->
+
+<!--blogs section start-->
+<section class="blogs" id="blogs">
+    <h1 class="heading"> our <span>section</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="https://b41a-34-125-49-157.ngrok-free.app" class="title">soil detection</a>
+                <span>Know your soil at a glance</span>
+                <!-- <p></p>
+                <a href="#" class="btn">read more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="http://127.0.0.1:5000" class="title">crop recommendation</a>
+                <span>Maximize yield with personalized crop suggestions</span>
+                <!-- <p></p>
+                <a href="#" class="btn">read more</a> -->
+            </div>
+        </div>
+        <!-- <div class="box">
+            <div class="image">
+                <img src="img3.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">crop detection</a>
+                <span>by admin / 21 may 2021</span>
+                <p></p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!--blogs section ends-->
+
+<!--footer section starts-->
+<section class="footer">
+    <div class="links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACTS</a>
+        <a href="#blog">SECTION</a>
+    </div>
+    <div class="credit"><span> created by ASMITA,  ASHWINI, SIDDHI, SHARVANI | all rights reserved</span> </div>
+</section>
+</section>
+</body>
+</html> 
+
+
